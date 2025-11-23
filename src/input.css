@@ -1,0 +1,7 @@
+@import "tailwindcss";
+@import "../assets/css/fonts.css";
+
+@theme {
+    --font-heading: 'Fraunces', serif;
+    --font-body: 'Montserrat', sans-serif;
+}
