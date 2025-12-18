@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<body>
+<body class="font-body bg-secondary text-primary">
     <!-- navbar -->
-    <nav>
+    <nav class="flex justify-between px-20 py-10">
         <div>
-            <img src="./assets/img/logo.png" alt="Webinar Logo">
+            <img src="./assets/img/logo.svg" alt="Webinar Logo">
         </div>
-        <ul>
+        <ul class="nav-links flex items-center gap-8">
             <li><a href="#home">Read</a></li>
             <li><a href="#about">Listen</a></li>
             <li><a href="#speakers">Talk</a></li>
@@ -29,16 +29,16 @@
 
     <main>
         <!-- hero section -->
-        <section id="hero">
-            <div class="hero-top">
+        <section class="flex flex-col gap-15 px-30 py-20" id="hero">
+            <div class="hero-top flex flex-col items-center text-center gap-6">
                 <div class="badge">
-                    <span>Free Webinar</span>
+                    <span>Free Webinar!</span>
                 </div>
-                <div class="hero-content">
+                <div class="hero-content flex items-center flex-col gap-6">
                     <h1>Transform Your Life with the Guidance of a Certified Life Coach</h1>
-                    <p>Free 90-minute webinar, Reiki will teach you effective and respectful strategies for to improve
+                    <p class="text-gray-500 text-center">Free 90-minute webinar, Reiki will teach you effective and respectful strategies<br> for to improve
                         productivity and well being in your life.</p>
-                    <div class="btn-group">
+                    <div class="btn-group flex gap-4 justify-center">
                         <a href="#" class="btn-secondary">Learn More</a>
                         <a href="#" class="btn-primary">Register</a>
                     </div>
@@ -52,8 +52,8 @@
 
         <!-- second section -->
         <section id="second-section">
-            <div class="cta-top">
-                <div>
+            <div class="cta-top flex gap-5 h-100 px-30 py-20">
+                <div class="border-t-2 flex-1 border-[#DE5217]">
                     <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M12.6667 9.33706C12.9603 8.50227 13.54 7.79834 14.3029 7.34996C15.0658 6.90158 15.9628 6.73767 16.835 6.88728C17.7072 7.03688 18.4983 7.49034 19.0682 8.16734C19.6381 8.84434 19.9501 9.70119 19.9487 10.5861C19.9487 13.0843 16.2015 14.3333 16.2015 14.3333M16.2498 19.3333H16.2665M7.66667 26V29.8925C7.66667 30.7806 7.66667 31.2246 7.84871 31.4527C8.00704 31.651 8.24712 31.7664 8.5009 31.7661C8.79271 31.7658 9.13945 31.4884 9.83293 30.9337L13.8087 27.7531C14.6209 27.1033 15.0269 26.7784 15.4791 26.5474C15.8803 26.3425 16.3074 26.1927 16.7487 26.1021C17.2461 26 17.7662 26 18.8062 26H23C25.8003 26 27.2004 26 28.27 25.455C29.2108 24.9757 29.9757 24.2108 30.455 23.27C31 22.2004 31 20.8003 31 18V9C31 6.19974 31 4.79961 30.455 3.73005C29.9757 2.78924 29.2108 2.02433 28.27 1.54497C27.2004 1 25.8003 1 23 1H9C6.19974 1 4.79961 1 3.73005 1.54497C2.78924 2.02433 2.02433 2.78924 1.54497 3.73005C1 4.79961 1 6.19974 1 9V19.3333C1 20.8833 1 21.6583 1.17037 22.2941C1.63271 24.0196 2.98044 25.3673 4.7059 25.8296C5.34174 26 6.11671 26 7.66667 26Z"
@@ -61,7 +61,7 @@
                     </svg>
                     <h2>Are you feeling stuck in your career?</h2>
                 </div>
-                <div>
+                <div class="border-t-2 flex-1 border-[#007CC2] self-end">
                     <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M12.6667 9.33706C12.9604 8.50227 13.54 7.79834 14.303 7.34996C15.0659 6.90158 15.9629 6.73767 16.8351 6.88728C17.7073 7.03688 18.4984 7.49034 19.0683 8.16734C19.6382 8.84434 19.9501 9.70119 19.9488 10.5861C19.9488 13.0843 16.2016 14.3333 16.2016 14.3333M16.2499 19.3333H16.2666M7.66673 26V29.8925C7.66673 30.7806 7.66673 31.2246 7.84878 31.4527C8.0071 31.651 8.24718 31.7664 8.50096 31.7661C8.79277 31.7658 9.13951 31.4884 9.83299 30.9337L13.8087 27.7531C14.6209 27.1033 15.027 26.7784 15.4792 26.5474C15.8804 26.3425 16.3074 26.1927 16.7488 26.1021C17.2462 26 17.7662 26 18.8063 26H23.0001C25.8003 26 27.2005 26 28.27 25.455C29.2108 24.9757 29.9757 24.2108 30.4551 23.27C31.0001 22.2004 31.0001 20.8003 31.0001 18V9C31.0001 6.19974 31.0001 4.79961 30.4551 3.73005C29.9757 2.78924 29.2108 2.02433 28.27 1.54497C27.2005 1 25.8003 1 23.0001 1H9.00006C6.1998 1 4.79967 1 3.73011 1.54497C2.7893 2.02433 2.0244 2.78924 1.54503 3.73005C1.00006 4.79961 1.00006 6.19974 1.00006 9V19.3333C1.00006 20.8833 1.00006 21.6583 1.17043 22.2941C1.63277 24.0196 2.98051 25.3673 4.70597 25.8296C5.3418 26 6.11677 26 7.66673 26Z"
@@ -71,9 +71,9 @@
                 </div>
             </div>
 
-            <div class="cta-bottom">
+            <div class="cta-bottom bg-heading py-20 flex flex-col items-center text-center gap-6">
                 <h3>If so, join us for this free webinar!</h3>
-                <p>Whatever the case may be, a certified life coach can guide you towards the path of self-discovery and
+                <p class="w-1/2">Whatever the case may be, a certified life coach can guide you towards the path of self-discovery and
                     personal growth.</p>
                 <a href="#" class="btn-primary">Join Us</a>
             </div>
@@ -81,13 +81,13 @@
         <!-- second section end -->
 
         <!-- presenter section -->
-        <section id="presenter">
-            <div class="presenter-left">
+        <section class="flex" id="presenter">
+            <div class="presenter-left flex flex-col justify-center items-center text-center gap-6 px-20 py-10">
                 <div class="badge">
                     <span>Presenter</span>
                 </div>
                 <h3>Meet Reiki</h3>
-                <p>Reiki is a best-selling parenting author and speaker, and creator of this LifeCoach course</p>
+                <p class="w-[70%]">Reiki is a best-selling parenting author and speaker, and creator of this LifeCoach course</p>
                 <a href="#" class="btn-primary">Read About Reiki</a>
             </div>
             <div class="presenter-right">
@@ -97,9 +97,9 @@
         <!-- presenter section end -->
 
         <!-- resources section -->
-        <section id="resources">
-            <h3>Checkout Our Free Resources</h3>
-            <div class="resources-container">
+        <section class="px-30 py-20" id="resources">
+            <h3 class="text-center">Checkout Our Free Resources</h3>
+            <div class="resources-container flex gap-10 py-10">
                 <div class="resource-card">
                     <img src="./assets/img/watch.png" alt="Watch">
                     <p class="card-heading">Watch</p>
@@ -123,42 +123,42 @@
         <!-- resources section end -->
 
         <!-- quote section -->
-        <section id="quote">
-            <div class="quote-text">
+        <section class="px-30 py-20 flex items-center gap-10" id="quote">
+            <div class="quote-text flex-1 flex flex-col gap-6">
                 <svg width="44" height="46" viewBox="0 0 44 46" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M1 12.2C1 8.27963 1 6.31945 1.76295 4.82207C2.43407 3.50493 3.50493 2.43407 4.82207 1.76295C6.31945 1 8.27963 1 12.2 1H31.8C35.7204 1 37.6805 1 39.1779 1.76295C40.4951 2.43407 41.5659 3.50493 42.237 4.82207C43 6.31945 43 8.27963 43 12.2V24.8C43 28.7204 43 30.6806 42.237 32.1779C41.5659 33.4951 40.4951 34.5659 39.1779 35.237C37.6805 36 35.7204 36 31.8 36H16.5954C15.1393 36 14.4112 36 13.7148 36.1429C13.097 36.2697 12.4991 36.4794 11.9375 36.7664C11.3044 37.0898 10.7359 37.5446 9.59883 38.4543L4.03277 42.9071C3.0619 43.6838 2.57646 44.0722 2.16793 44.0726C1.81263 44.073 1.47652 43.9114 1.25487 43.6338C1 43.3145 1 42.6928 1 41.4495V12.2Z"
                         stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
-                <p class="quote">Thanks to this life coach, I have a clear roadmap for achieving my goals and creating
+                <p class="quote font-heading font-light text-3xl">Thanks to this life coach, I have a clear roadmap for achieving my goals and creating
                     the life I want. I'm so grateful for their support and guidance.</p>
                 <a href="#" class="btn-primary">Register Now</a>
             </div>
-            <div class="quote-image">
+            <div class="quote-image flex-1">
                 <img src="./assets/img/coach.png" alt="Coach Image">
             </div>
         </section>
         <!-- quote section end -->
 
         <!-- features section -->
-        <section id="features">
-            <div class="feature">
+        <section class="px-30 py-20 flex gap-10 items-center text-center" id="features">
+            <div class="feature flex-1 flex flex-col items-center">
                 <svg width="42" height="38" viewBox="0 0 42 38" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M28.0001 18.0018H26.0001L23.0001 24.0018L19.0001 12.0018L16.0001 18.0018H14.0001M20.9864 5.27346C16.9877 0.598631 10.3196 -0.658884 5.30951 3.62186C0.29941 7.9026 -0.405942 15.0598 3.52852 20.1226C6.5003 23.9467 14.9427 31.6237 18.8961 35.1516C19.6229 35.8001 19.9863 36.1244 20.4118 36.252C20.7812 36.3628 21.1917 36.3628 21.5611 36.252C21.9866 36.1244 22.35 35.8001 23.0767 35.1516C27.0301 31.6237 35.4725 23.9467 38.4443 20.1226C42.3788 15.0598 41.7596 7.85757 36.6633 3.62186C31.5671 -0.613855 24.9851 0.598631 20.9864 5.27346Z"
                         stroke="#007CC2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
-                <p class="feature-heading">Gain clarity, focus, and confidence in your abilities</p>
+                <p class="feature-heading mt-5 mb-2">Gain clarity, focus, and confidence in your abilities</p>
                 <p class="feature-body">Our experienced coaches work with you to identify and overcome limiting beliefs,
                     create a roadmap for success, and provide ongoing support and guidance. </p>
             </div>
-            <div class="feature">
+            <div class="feature flex-1 flex flex-col items-center">
                 <svg width="40" height="36" viewBox="0 0 40 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M14.216 23C14.216 23 16.841 26 21.216 26C25.591 26 28.216 23 28.216 23M26.716 13H26.736M15.716 13H15.736M21.216 35C30.6048 35 38.216 27.3888 38.216 18C38.216 8.61116 30.6048 1 21.216 1C11.8271 1 4.21599 8.61116 4.21599 18C4.21599 19.9 4.52768 21.7272 5.10273 23.4332C5.31913 24.0752 5.42732 24.3962 5.44684 24.6429C5.46611 24.8864 5.45155 25.0571 5.39129 25.2939C5.33028 25.5336 5.19558 25.783 4.92617 26.2816L1.65486 32.3367C1.18824 33.2004 0.954924 33.6323 1.00714 33.9655C1.05262 34.2558 1.22348 34.5115 1.47433 34.6645C1.76234 34.8402 2.25058 34.7897 3.22707 34.6887L13.4691 33.63C13.7793 33.598 13.9344 33.5819 14.0757 33.5873C14.2147 33.5927 14.3129 33.6057 14.4485 33.637C14.5863 33.6687 14.7596 33.7355 15.1063 33.8691C17.0024 34.5996 19.0624 35 21.216 35ZM27.716 13C27.716 13.5523 27.2683 14 26.716 14C26.1637 14 25.716 13.5523 25.716 13C25.716 12.4477 26.1637 12 26.716 12C27.2683 12 27.716 12.4477 27.716 13ZM16.716 13C16.716 13.5523 16.2683 14 15.716 14C15.1637 14 14.716 13.5523 14.716 13C14.716 12.4477 15.1637 12 15.716 12C16.2683 12 16.716 12.4477 16.716 13Z"
                         stroke="#DE5217" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
-                <p class="feature-heading">Create the life you want</p>
+                <p class="feature-heading mt-5 mb-2">Create the life you want</p>
                 <p class="feature-body">Don't let fear or self-doubt hold you back any longer. Our life coaching
                     services can help you gain the clarity and direction you need to create the life you want.</p>
             </div>
@@ -166,41 +166,44 @@
         <!-- features section end -->
 
         <!-- newsletter section -->
-        <section id="newsletter">
-            <div class="cta-newsletter">
-                <p class="heading">Contact us today to schedule a session and start living the life you want.</p>
-                <div class="email-capture">
-                    <div class="input-box">
-                        <input type="email" name="email" id="email">
+        <section class="relative mt-30" id="newsletter">
+            <div class="cta-newsletter bg-white rounded-lg absolute inset-x-30 max-w-screen-xl mx-auto -top-[20%] px-15 py-12 shadow-lg flex gap-6">
+                <p class="heading font-heading text-2xl font-light flex-1">Contact us today to schedule a session and start living the life you want.</p>
+                <div class="email-capture flex-1">
+                    <div class="input-box w-full grid grid-cols-[1fr_auto] gap-4 mb-1">
+                        <input class="text-sm border border-gray-300 rounded-md px-3 py-2" type="email" name="email" id="email" placeholder="Enter your email">
                         <a href="#" class="btn-primary">Sign Up</a>
                     </div>
-                    <p>We care about your data in our privacy policy.</p>
+                    <p class="text-sm">We care about your data in our <a href="#" class="underline">privacy policy</a>.</p>
                 </div>
             </div>
 
-            <div class="news-left">
-                <h2>Sunday, 19th March</h2>
-                <p>🇬🇧 UK 6pm 🇺🇸 US 10:00 am PST / 11:00 am MT / 12:00 noon CT/ 1:00 pm ET</p>
-                <a href="#" class="btn-secondary">
-                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6.48336 0.649902V12.3166M0.650024 6.48324H12.3167" stroke="white" stroke-width="1.3"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                </a>
-            </div>
-            <div class="news-right">
-                <h2>Online Zoom</h2>
-                <p>Link will be shared before the event</p>
+            <div class="news bg-primary text-secondary px-30 pt-40 pb-20 flex justify-between">
+                <div class="news-left">
+                    <h2 class="font-semibold text-[#A4C14D]">Sunday, 19th March</h2>
+                    <p class="mt-2">🇬🇧 UK 6pm 🇺🇸 US 10:00 am PST / 11:00 am MT / 12:00 noon CT/ 1:00 pm ET</p>
+                    <a href="#" class="btn-secondary-dark mt-4 flex items-center gap-2">
+                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.48336 0.649902V12.3166M0.650024 6.48324H12.3167" stroke="white" stroke-width="1.3"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <span>Add to Calendar</span>
+                    </a>
+                </div>
+                <div class="news-right">
+                    <h2 class="font-semibold">Online on Zoom</h2>
+                    <p>Link will be shared before the event</p>
+                </div>
             </div>
         </section>
         <!-- newsletter section end -->
 
         <!-- invitation section -->
-        <section id="invitation">
-            <h3>Invite your friends</h3>
-            <p>We work with you to identify areas for improvement, develop effective communication strategies, and provide ongoing support and guidance.</p>
+        <section id="invitation" class="px-30 py-20 flex gap-10 flex-col items-center">
+            <h3 class="text-5xl">Invite your friends</h3>
+            <p class="w-1/2 text-center">We work with you to identify areas for improvement, develop effective communication strategies, and provide ongoing support and guidance.</p>
 
-            <img src="./assets/img/invite_friend.png" alt="Invitation">
+            <img src="./assets/img/invite_friend.png" alt="Invitation" class=" w-1/2">
 
             <a href="#" class="btn-primary">Share About The Event</a>
         </section>
@@ -208,10 +211,10 @@
     </main>
 
     <!-- footer -->
-    <footer>
+    <footer class="bg-primary text-secondary px-30 py-15">
         <div class="footer-top">
-            <img src="./assets/img/logo-white.png" alt="Logo White">
-            <div class="footer-links">
+            <img src="./assets/img/logo-white.svg" alt="Logo White">
+            <div class="footer-links flex gap-7 mt-7">
                 <a href="#" class="link">About Us</a>
                 <a href="#" class="link">Success Stories</a>
                 <a href="#" class="link">Amazon Shop</a>
@@ -222,10 +225,10 @@
         </div>
 
         <div class="footer-bottom">
-            <hr class="break-line">
-            <div class="footer-text">
+            <hr class="break-line border-b border-gray-600 mt-15">
+            <div class="footer-text flex justify-between items-center mt-6">
                 <p>© 2023 Life Coach Reiki. All rights reserved.</p>
-                <div class="social-icons">
+                <div class="social-icons flex gap-4">
                     <img src="./assets/img/twitter.svg" alt="Twitter Icon">
                     <img src="./assets/img/linkedin.svg" alt="LinkedIn Icon">
                     <img src="./assets/img/facebook.svg" alt="Facebook Icon">
